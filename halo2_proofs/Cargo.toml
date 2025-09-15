@@ -81,6 +81,8 @@ mopro-msm = { git = "https://github.com/zkonduit/metal-msm-gpu-acceleration.git"
 plotters = { version = "0.3.0", default-features = false, optional = true }
 tabbycat = { version = "0.1", features = ["attributes"], optional = true }
 
+ark-std = { version = "^0.4.0", default-features = false }
+
 # Legacy circuit compatibility
 halo2_legacy_pdqsort = { version = "0.1.0", optional = true }
 
@@ -123,6 +125,7 @@ derive_serde = ["halo2curves/derive_serde"]
 parallel-poly-read = []
 precompute-coset = []
 multicore = []
+print-trace = ["ark-std/print-trace"]
 
 [lib]
 bench = false
